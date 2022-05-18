@@ -1,0 +1,22 @@
+.wrapper-text {
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+.wrapper-cards {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.card {
+  transition: transform 500ms ease;
+}
+.card-colors {
+  background-color: #c8e3cb;
+  color: #680f3d;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
