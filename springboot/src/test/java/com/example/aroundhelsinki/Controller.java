@@ -5,10 +5,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-@CrossOrigin(origins = "http://localhost:4200")
+
+@CrossOrigin(origins = "https://aroundhelsinki1.herokuapp.com")
 @RestController
 public class Controller {
 
+  @CrossOrigin
   @GetMapping("/v1/places")
   private String getPlaces() {
     String url = "https://open-api.myhelsinki.fi/v1/places/";
@@ -17,6 +19,7 @@ public class Controller {
     return result;
   }
 
+  @CrossOrigin
   @GetMapping("/place/{id}")
   private String getPlace(@PathVariable Long id) {
     String url = "https://open-api.myhelsinki.fi/v1/place/" + id;
@@ -25,6 +28,7 @@ public class Controller {
     return result;
   }
 
+  @CrossOrigin
   @GetMapping("/v1/events")
   private String getEvents() {
     String url = "https://open-api.myhelsinki.fi/v1/events/";
@@ -33,6 +37,7 @@ public class Controller {
     return result;
   }
 
+  @CrossOrigin
   @GetMapping("/event/{id}")
   private String getEvent(@PathVariable String id) {
     String url = "https://open-api.myhelsinki.fi/v1/event/" + id;
@@ -41,6 +46,7 @@ public class Controller {
     return result;
   }
 
+  @CrossOrigin
   @GetMapping("/v1/activities")
   private String getActivities() {
     String url = "https://open-api.myhelsinki.fi/v1/activities/";
@@ -49,6 +55,7 @@ public class Controller {
     return result;
   }
 
+  @CrossOrigin
   @GetMapping("/activity/{id}")
   private String getActivity(@PathVariable String id) {
     String url = "https://open-api.myhelsinki.fi/v1/activity/" + id;

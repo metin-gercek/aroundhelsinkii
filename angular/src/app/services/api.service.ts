@@ -7,7 +7,7 @@ import { forkJoin } from 'rxjs';
   providedIn: 'root',
 })
 export class ApiService {
-  private externalApi = 'https://aroundhelsinki-1652773931995.azurewebsites.net';
+  private externalApi = 'https://aroundspring.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
